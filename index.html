@@ -5,9 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+
 </head>
+
+
 <body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class=" w-[1600px] h-[100px] flex items-center justify-between px-[200px] py-5 bg-[#1A0B2E] text-white mx-auto">
+                <img class="h-[32px] w-[220px] hover:scale-105" src="./images/logo-techwave.png" alt="logo-techwave">
+                <div class="space-x-8 flex font-[Inter] font-medium">
+                    <a href="#" class="hover:underline">About</a>
+                    <a href="#" class="hover:underline">Episods</a>
+                    <a href="#" class="hover:underline">Host</a>
+                   
+                </div>
+                <div>
+                    <button class="bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white font-bold py-2 px-4  font-[Inter] text-2xl rounded-full hover:bg-sky-700 hover:scale-105"
+                    >Subscribe ></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-[1600px] h-[760px] mx-auto flex items-center justify-between px-[200px] py-5 bg-[url('./images/hero-bg.png')] bg-no-repeat bg-cover">
+            <div class="space-y-6 flex flex-col p-10 rounded-3xl justify-center items-center mx-auto ">
+                <div >
+                    <img class="absolute top-[190px] left-[740px] z-10"  src="./images/microphone.png" alt="microphone">
+                    <img class="absolute top-[101px] left-[625px]" src="./images/hero-circle.png" alt="hero-circle">
+                    <p class="absolute top-[150px] left-[890px] text-black font-bold  px-4 py-2 rounded-full text-2xl bg-[#00FF88]">New</p>
+                </div>
+
+                <div class="flex flex-col gap-6 items-center mt-20 justify-center mx-auto">
+                    <div class="mt-[250px] flex flex-col items-center text-center space-y-4">
+                    <h1 class=" text-6xl font-[Inter] font-extrabold text-white leading-tight">TechWave</h1>
+                    <p class="text-xl font-[Inter] font-normal text-white leading-relaxed">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+                </div>
+                
+                <!-- Button 01 -->
+                <div class="flex justify-center">
+                    <button class="flex items-center gap-2 bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600  text-white font-bold py-3 px-6  font-[Inter] text-2xl rounded-full hover:bg-sky-700 hover:scale-105"
+                    >
+                    <img src="./images/spotify.png" alt="">
+                    <p>Listen on Spotify</p>
+                    </button>
+                    <!-- Button 02 -->
+                    <button class="flex items-center gap-2  text-white font-bold py-3 px-6  font-[Inter] text-2xl rounded-full  hover:scale-105 border-[#00FF88] border-2 ml-6"
+                    >
+                    <img src="./images/message.png" alt="">
+                    <p class="text-2xl text-[#00FF88] ">Subscribe</p>
+                    </button>
+                </div>
+      
+            </div>
+            
+        </section>
+    </main>
     
 </body>
 </html>
